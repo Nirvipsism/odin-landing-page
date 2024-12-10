@@ -1,4 +1,4 @@
-* { border: 2px solid red; }
+/* * { border: 0.1px solid red; } */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -8,14 +8,29 @@ html, body {
     padding: 0;
 }
 
+/* Introduced a .container class to control alignment and max-width */
+.container { /* CHANGED: New container class */
+    max-width: 1100px; /* CHANGED: sets a max width for alignment */
+    margin: 0 auto;    /* CHANGED: center the container */
+    padding: 0 50px;   /* CHANGED: add horizontal padding for alignment */
+    display: flex;     /* CHANGED: make it flex to align items */
+    align-items: center; /* CHANGED: vertically center items */
+    justify-content: space-between; /* CHANGED: space between for left-right alignment */
+}
+
 /* Header Styles */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
     background-color: #1f2937;
     color: #f9faf8;
+    padding: 20px 0; /* CHANGED: Removed horizontal padding from here and rely on .container */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
 }
   
   .header-nav ul {
@@ -31,16 +46,19 @@ header {
   
   .header-nav a {
     text-decoration: none;
-    color: #f9faf8;
+    color:  #e5e7eb;
+    font-size: 19px;
+    margin-left: 5px;
   }
 
   /* Hero Section Styles */
 .hero-section {
     background-color: #1f2937;
-    display: flex;
+    padding: 120px 0; /* CHANGED: Removed horizontal padding from hero-section, now .container handles it */
+    /* display, align-items, justify-content moved to .container, so removing them here */ 
+    /* display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 55px;
+    justify-content: space-evenly;  */
 }
 
 .hero-content {
@@ -57,7 +75,7 @@ header {
 .hero-subtext {
     font-size: 18px;
     color: #e5e7eb;
-    margin: 0;
+    margin: 5px 0;
     max-width: 400px;
     margin-bottom: 5px;
 }
@@ -71,6 +89,7 @@ header {
     cursor: pointer;
     font-weight: 700;
     border-radius: 10px;
+    margin: 5px 0;
 }
 
 .hero-button:hover {
@@ -80,10 +99,9 @@ header {
 /* Image Placeholder */
 .hero-image-placeholder {
     background-color: #4B5563; /* a gray shade */
-    width: 500px;
+    width: 575px;
     height: 250.5px;
     display: flex;
-    flex-shrink: 0;
     justify-content: center;
     align-items: center;
 }
