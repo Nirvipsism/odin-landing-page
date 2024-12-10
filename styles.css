@@ -1,0 +1,96 @@
+* { border: 2px solid red; }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+  
+  .header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header-nav li {
+    margin-left: 20px;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    color: #f9faf8;
+  }
+
+  /* Hero Section Styles */
+.hero-section {
+    background-color: #1f2937;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 55px;
+}
+
+.hero-content {
+    margin-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 0;
+    max-width: 400px;
+    margin-bottom: 5px;
+}
+
+.hero-button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    border: none;
+    padding: 10px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.hero-button:hover {
+    background-color: #2f6bc3;
+}
+
+/* Image Placeholder */
+.hero-image-placeholder {
+    background-color: #4B5563; /* a gray shade */
+    width: 500px;
+    height: 250.5px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-placeholder p {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-align: center;
+    margin: 0;
+}
