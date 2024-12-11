@@ -1,7 +1,5 @@
 /* * { border: 0.1px solid red; } */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 html, body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -50,6 +48,11 @@ header {
     font-size: 19px;
     margin-left: 5px;
   }
+
+
+
+
+
 
   /* Hero Section Styles */
 .hero-section {
@@ -112,3 +115,152 @@ header {
     text-align: center;
     margin: 0;
 }
+
+
+
+
+
+/* Info Section Styles */
+.info-section {
+    background-color: #ffffff; /* A light background to contrast with the hero section */
+    padding-top: 40px; /* Vertical spacing around the section */
+    padding-bottom: 100px;
+  }
+  
+  /* Override the .container behavior for this section */
+  .info-section .container {
+    /* The .container class was initially set to flex with space-between.
+       We'll override it here to arrange items vertically and center them. */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title inside the info section */
+  .info-section h2 {
+    font-size: 36px;
+    color: #1f2937; 
+    font-weight: 900;
+    margin: 0 0 40px 0; /* Space below the title */
+  }
+  
+  /* The row that holds the four cards */
+  .info-cards {
+    display: flex;
+    justify-content: space-between; 
+    width: 80%; /* Use full container width */
+  }
+  
+  /* Each card with an image and subtext */
+  .info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Let each card grow equally to fill space */
+    margin: 0 10px; Some horizontal spacing between cards
+  }
+   
+  /* The placeholder for the illustration/image */
+  .info-image {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #1184fe;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Subtext under the image */
+  .info-card p {
+    color: #6B7280; /* Gray text for lower contrast */
+    font-size: 16px;
+    max-width: 150px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+
+  /* Quote Section Styles */
+  .quote-section {
+    background-color: #e5e7eb;
+    padding: 130px 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  blockquote p {
+    margin: -10px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+  }
+
+  .quote-section footer {
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: end;
+    max-width: 850px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+  /* Cta section */
+  
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3882F6;
+    padding: 50px 100px;
+    border-radius: 8px;
+    color: #fff;
+    margin: 100px 150px;        /* center it on the page if desired */
+  }
+  
+  .cta-text {
+    max-width: 70%; /* ensure text doesn't crowd the button */
+  }
+  
+  .cta-text h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem; /* Adjust font-size as needed */
+  }
+  
+  .cta-text p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9; /* slight transparency for subtlety */
+  }
+  
+  .cta-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #fff;
+    color: #4285f4;
+  }
+
+
+  /* footer style */
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1f2937;
+    color:#fff
+  }
